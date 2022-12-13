@@ -1,0 +1,110 @@
+
+:root{
+    --black:#130f40;
+    --light-color:#666
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:2rem solid rgba(0,0,0,.1);
+    --outline:1rem solid rgba(0,0,0,.1);
+    --outline-hover:2rem solid var(--black);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+transition: all .2s linear;}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+.navfirst {
+    position: relative;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 9%;
+    background-color: #fff;
+} 
+.navsecond {
+    /* position: relative; */
+    /* top:0; left: 0; right: 0; */
+    /* z-index: 1000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 2rem 9%; */
+    background-color: #fff;
+} 
+.headerfirst{
+    position: relative;
+    top:0; left:0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+    background:#fff;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;  
+}
+.headersecond{
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    padding:2rem 9%;
+    background:#fff;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;  
+}
+
+.headerfirst .navfirst a{
+    font-size: 1.7rem;
+    margin:0 1rem;
+    color:var(--black);
+}
+
+.headersecond .navsecond a{
+    font-size: 1.7rem;
+    margin:0 1rem;
+    color:var(--black);
+}
+
+.logo  {
+    margin: -20px -3px;
+    height: 54px;
+}
+
+.search{
+    margin-top: 20px;
+
+    
+}
+
+.srcsec{
+    font-size: 30px;
+    text-align: center;
+}
+.search .search-form{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search .search-form input{
+
+    margin: auto;
+    width: 50rem;
+    height:5rem;
+    font-size: 1.6rem;
+    padding:0 1.5rem;
+    box-shadow: rgba(249, 249, 249, 0.3) 0px 1px 2px 0px, rgba(249, 249, 249, 0.15) 0px 2px 6px 2px;
+
+}
