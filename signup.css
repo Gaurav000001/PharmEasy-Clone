@@ -1,0 +1,213 @@
+body{
+	font-family: sans-serif;
+	/* margin:0;
+	line-height: 1.5; */
+}
+/* akash chandra mishra */
+*{
+	box-sizing: border-box;
+	margin:0;
+}
+
+.login-page{
+	min-height: 100vh;
+	padding:15px;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.login-page .box{
+	/* background-image: url('https://imag.malavida.com/mvimgbig/download-fs/pharmeasy-27814-2.jpg'); */
+	background-image: url(bg.png);
+	background-size: cover;
+	background-position: -10px center;
+	background-repeat: repeat-x;
+	flex:0 0 700px;
+	max-width: 700px;
+	min-height: 480px;
+	box-shadow: 0 0 10px #dddddd;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: 1;
+	transition: all 0.5s ease-in-out;
+	border-radius: 15px;
+}
+
+.login-page .box.slide-active{
+	background-position:10px center;
+}
+.login-page .box::before{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height:100%;
+	z-index: -1;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 15px;
+}
+.login-page .box .left,
+.login-page .box .right{
+  flex:0 0 50%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:40px 0;
+  border-radius: 15px;
+}
+
+.login-page .box .left h3,
+.login-page .box .right h3{
+	font-size: 20px;
+	color:#ffffff;
+	margin:0 0 15px;
+	border-radius: 15px;
+}
+
+.login-page .box .left .register-btn,
+.login-page .box .right .login-btn{
+  background-color: white;
+  padding: 10px 35px;
+  color:teal;
+  border:1px solid #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.login-page .box .left .register-btn:focus,
+.login-page .box .right .login-btn:focus{
+  outline: none;
+}
+/* .login-page .box .left .register-btn,
+.login-page .box .right .login-btn :hover{
+   background-color: white;
+   color: teal;
+} */
+.login-page .box .form{
+	position: absolute;
+	background-color: #ffffff;
+	height: 100%;
+	width: 50%;
+	right:0;
+	top:0;
+	padding:30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: all 0.5s ease-in-out;
+	border-radius: 15px;
+}
+.login-page .box.slide-active .form{
+	right: 50%;
+}
+.login-page .box .form h3{
+	font-size: 20px;
+	color:#000000;
+	margin:0 0 30px;
+}
+.login-page .box .form .form-group{
+	margin-bottom: 20px;
+}
+
+.login-page .box .form .lost-password-form,
+.login-page .box .form .login-form,
+.login-page .box .form .register-form{
+  transition: all 0.5s ease-in-out;
+} 
+
+.login-page .box .form .form-control{
+	width: 100%;
+	height: 45px;
+	font-size: 16px;
+	color:#000000;
+	border:none;
+	border-bottom:1px solid #cccccc;
+	padding:0;
+}
+.login-page .box .form .form-control:focus{
+	outline: none;
+}
+.login-page .box .form label{
+	font-size: 16px;
+	color:#555555;
+}
+.login-page .box .form .submit-btn{
+	width: 100%;
+	height: 40px;
+	background-color: teal;
+	border:none;
+	border-radius: 20px;
+	color:#ffffff;
+	text-transform: uppercase;
+	margin-top:10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.login-page .box .form p{
+  margin-top:20px;
+  text-align: center;
+}
+.login-page .box .form h5{
+	font-size: 16px;
+	color:#555555;
+	margin:0 0 30px;
+	font-weight: normal;
+}
+
+.login-page .box .form p a{
+	font-size: 16px;
+	text-decoration: none;
+	display: inline-block;
+	color:#3f51b5;
+}
+
+.login-page .box .form .form-hidden{
+	max-height: 0;
+	visibility: hidden;
+	opacity:0;
+	overflow:hidden;
+}
+.login-form > h3 :hover{
+    background-color: white;
+	color: teal;
+
+}
+.login-btn :hover{
+	background-color: white;
+	color: teal;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+   .login-page .box{
+   	 flex:0 0 100%;
+   	 max-width: 100%;
+   }
+}
+@media(max-width: 575px){
+	.login-page .box .form{
+		width: 100%;
+		position: relative;
+		right: auto;
+		top:auto;
+		height: auto;
+	}
+	.login-page .box,
+	.login-page .box.slide-active{
+        background-position: center;
+	}
+	.login-page .box .left h3, .login-page .box .right h3{
+		font-size: 16px;
+	}
+	.login-page .box.slide-active .form{
+		right:auto;
+	}
+}
+
