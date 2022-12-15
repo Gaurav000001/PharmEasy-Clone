@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #4f585e;
+}
+
+#head{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    background-color: #10847e;
+    height: 90px;
+}
+#head>div{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 150px;
+}
+#head>div>div{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    
+}
+#head>div>div>p{
+    font-size: 18px;
+    margin-top: -3px;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+#head>div>img{
+    height: 85px;
+    margin-left: -20px;
+}
+
+
+
+#methods{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+}
+#offers>p{
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+#paymentMethods{
+    width: 100%;
+    /* border: 1px solid black; */
+}
+#paymentMethods>div{
+    width: 95%;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 20px;
+    border-bottom: 1px solid #dfe3e6;
+    cursor: pointer;
+}
+#paymentMethods>div>img{
+    max-width: 45px;
+    max-height: 15px;
+    margin-top: 15px;
+    border-bottom: none;
+}
+.inner>svg{
+    width: 23px;
+    height: fit-content;
+}
+.inner{
+    margin-bottom: 8px;
+}
+.inner>legend{
+    font-weight: 700;
+    font-size: 18px;
+}
+#paymentMethods>div>div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+#paymentMethods>div>div>div{
+    display: flex;
+    justify-content: space-between;
+}
+#paymentMethods>div>div>p{
+    font-size: 14px;
+    color: #8897a2;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
