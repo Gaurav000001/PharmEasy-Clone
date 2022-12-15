@@ -1,0 +1,48 @@
+/**  ****************ResPonsive Code Start Here**************************  **/
+
+@media (max-width: 1000px) {
+
+    .top {
+        margin: auto;
+        padding: 25px;
+        /* background-color: rgb(167, 170, 170); */
+        width: 90%;
+    
+    
+    }
+    
+    .top>h3{
+        font-size: 30px;
+        padding-left: 4rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:400;
+    }
+
+  #category {
+    /* border: 2px solid red; */
+    margin: auto;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+#category img {
+    height: 200px;
+    width: 200px;
+    margin-bottom:10px ;
+    border-radius: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+}
+
+/*! <!------------------- screen-1 ends here -------------------> */
+
+@media screen and (min-width: 100px) and (max-width: 700px) {
+}
+
+/* ! ----------------------Screen-2 Ends Here ----------------> */
+
+/**  ****************ResPonsive Code End Here**************************  **/
