@@ -20,7 +20,7 @@ body{
 }
 .login-page .box{
 	/* background-image: url('https://imag.malavida.com/mvimgbig/download-fs/pharmeasy-27814-2.jpg'); */
-	background-image: url(bg.png);
+	background-image: url(/images/bg.png);
 	background-size: cover;
 	background-position: -10px center;
 	background-repeat: repeat-x;
