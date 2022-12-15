@@ -81,7 +81,7 @@ for(var i=0;i<dataBase.length;i++){
     }; 
 if(flag==1){
    alert("Login Successful");
-//  window.location.href = add landing page here;
+ window.location.href = "index.html";
 }
 else if(flag==0){
    alert("Wrong Credentials");
