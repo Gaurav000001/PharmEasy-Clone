@@ -9,20 +9,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body>
 
     <!-- --------NavBar Top============= -->
 
-    <header class="headerfirst">
-        <img class="logo" src="/images/icon.jpg" alt="logo">
-        <nav class="navfirst">
-            <a href="./signup.html">register/login</a>
-            <a href="./cart.html">cart</a>
+    <div id="containHeader">
+    <div id="logo">
+      <img src="./images/bg1.jpg">
+    </div>
+    <div id="tabHead">
+      <div id="searchHead"></div>
+      <div id="searchHead">
+        <nav>
+          <ul>
+            <li><a href="#">Order Medicines</a></li>
+            <li><a href="#">Healthcare<i class="fas fa-caret-down"></i></a>
+            
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Personal care </a></li>
+                        <li><a href="#">Home care</a></li>
+                        <li><a href="#">Skin care</a></li>
+                        <li><a href="#">Fitness Equipments</a></li>
+                        <li><a href="#">Ayurvedic care</a></li>
+    
+                        <li>
+                            <a href="#"> HealthCare devices<i class="fas fa-caret-right"></i></a>
+    
+                            <div class="dropdown-menu-1">
+                                <ul>
+                                    <li><a href="#">Thermometer</a></li>
+                                    <li><a href="#">Oxymeter</a></li>
+                                    <li><a href="#">Diabetic regulator</a></li>
+                                    <li><a href="#">Pressure machines</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            
+            
+            </li>
+            <li><a href="#">Lab Tests</a></li>
+
+            <button type="button" class="keyHead" style="margin-left:300px">
+              <span class="keyHead__text">Offers</span>
+            </button>
+              
+            <button type="button" class="keyHead">
+              <link rel="stylesheet" href="singup.html">
+              <span class="keyHead__text"  >  Register/Signup</span>
+              <i class="fa-solid fa-user"></i>
+            </button>
+             
+            <button type="button" class="keyHead">
+              <span class="keyHead__text">Cart</span>
+              <i class="fa-solid fa-car"></i>
+              <i class="fa-regular fa-cart-shopping"></i>
+            </button>
+
+          </ul>
         </nav>
-    </header>
-    <hr>
+      </div>
+    </div>
+    
+  </div>
 
     <!-- --------NavBar Top End============= -->
 
@@ -33,28 +87,7 @@
             <a href="#">Lab Test</a>
             <a href="#">Health Care <i class="fas fa-caret-down"></i></a>
 
-            <div class="dropdown-menu">
-                <ul>
-                    <li><a href="#">Personal care </a></li>
-                    <li><a href="#">Home care</a></li>
-                    <li><a href="#">Skin care</a></li>
-                    <li><a href="#">Fitness Equipments</a></li>
-                    <li><a href="#">Ayurvedic care</a></li>
-
-                    <li>
-                        <a href="#"> HealthCare devices<i class="fas fa-caret-right"></i></a>
-
-                        <div class="dropdown-menu-1">
-                            <ul>
-                                <li><a href="#">Thermometer</a></li>
-                                <li><a href="#">Oxymeter</a></li>
-                                <li><a href="#">Diabetic regulator</a></li>
-                                <li><a href="#">Pressure machines</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+           
             <a href="#">Surgery </a>
             <a href="#">PLUS</a>
             <a href="#">Offers</a>

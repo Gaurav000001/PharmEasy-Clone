@@ -14,6 +14,88 @@
     transition: all .2s linear;
 }
 
+/* Header Second Akash */
+      #containHeader{
+        display:flex;
+        width:100%;
+        height:100px;
+        background-color:#10847e;
+      }
+      img{
+        margin-top:30px;
+        height:65px;
+        width:200px;
+      }
+      #logo{
+        height:80px;
+        width:80px;
+        margin-left:10px;
+      }
+      #tabHead{
+        height:100%;
+        width:100%;
+      }
+
+      #searchHead{
+        height:45%;
+        width:1200px;
+        margin:auto;
+      }
+
+      ul{
+        display:flex;
+      }
+
+
+      li {
+        font-size:20px;
+        font-family:Open Sans,sans-serif;
+        margin-top:10px;
+        margin-left:25px;
+        list-style:none;
+      }
+      li a{
+        text-decoration:none;
+        color:white;
+      }
+
+      li a::after{
+        content:'';
+        width:0;
+        height:3px;
+        background-color:white;
+        margin:auto;
+        display:block;
+      }
+      
+      li a:hover::after{
+        width:100%;
+        transition: width 0.1s linear;
+      }
+      button{
+        margin:auto;
+      }
+      .keyHead{
+        color:white;
+        font-size:15px;
+        font-family:Open Sans,sans-serif;
+        margin-top:5px;
+        margin-left:25px;
+        border:transparent;
+        background-color:transparent;
+      }
+      ion-icon {
+        color: white;
+        font-size: 22px;
+        margin:auto;
+      }
+
+
+
+/* Header SEcond akash end */
+
+
+
 
 .fas {
     float: right;
@@ -25,7 +107,7 @@
     display: none;
 }
 
-.navsecond:hover .dropdown-menu {
+.searchHead:hover .dropdown-menu {
     display: block;
     position: absolute;
     left: auto;
@@ -33,12 +115,12 @@
     background-color: var(--color-black);
 }
 
-.navsecond:hover .dropdown-menu ul {
+.searchHead:hover .dropdown-menu ul {
     display: block;
     margin: 10px;
 }
 
-.navsecond:hover .dropdown-menu ul li {
+.searchHead:hover .dropdown-menu ul li {
     width: 150px;
     padding: 10px;
 }
@@ -357,9 +439,9 @@ h2 {
     margin-left: 40px;
 }
 
-.d3 {
+/* .d3 {
     margin-left: 400px;
-}
+} */
 
 
 /* Footer Css End here */

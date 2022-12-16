@@ -23,7 +23,7 @@
     margin: auto;
     height: 300px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 1rem;
     padding-top: 2rem;
 }
@@ -40,9 +40,29 @@
 
 /*! <!------------------- screen-1 ends here -------------------> */
 
-@media screen and (min-width: 100px) and (max-width: 700px) {
+@media (max-width: 850px){
+
+
+
 }
 
 /* ! ----------------------Screen-2 Ends Here ----------------> */
+
+/*TODO Screen-3 Start here */
+
+@media (max-width: 500px){
+
+}
+
+/*TODO Screen-3 end here */
+
+/*! Screen-4 Start Here */
+
+@media (max-width: 350px){
+
+
+}
+
+/*! Screen-4 End Here */
 
 /**  ****************ResPonsive Code End Here**************************  **/
