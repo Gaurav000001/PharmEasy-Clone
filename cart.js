@@ -1,37 +1,5 @@
 let cartItems = JSON.parse(localStorage.getItem("prod")) || [];
 
-
-
-let obj=[{
-    "createdAt": "By ALKEM LABORATORIES LTD",
-    "Title": "Sumo Strip Of 15 Tablets",
-    "avatar": "https://cdn01.pharmeasy.in/dam/products/246298/sumo-strip-of-15-tablets-2-1641530417.jpg?dim=320x320&dpr=1&q=100",
-    "category": "Paracetamol",
-    "description": "15 Tablet(s) in Strip",
-    "price": 116,
-    "id": "15"
-    },
-    {
-    "createdAt": "By ALEMBIC PHARMACEUTICALS LTD",
-    "Title": "Magadol Tablet",
-    "avatar": "https://cdn01.pharmeasy.in/dam/products/109590/magadol-tablet-2-1641531014.jpg?dim=320x320&dpr=1&q=100",
-    "category": "Paracetamol",
-    "description": "10 Tablet(s) in Strip",
-    "price": 62,
-    "id": "16"
-    },
-    {
-    "createdAt": "By CIPLA GX",
-    "Title": "Paracip 650mg Tablet",
-    "avatar": "https://cdn01.pharmeasy.in/dam/products/266953/paracip-650mg-tablet-2-1658934278.jpg?dim=320x320&dpr=1&q=100",
-    "category": "Paracetamol",
-    "description": "10 Tablet(s) in Strip",
-    "price": 18,
-    "id": "17"
-    }]
-    
-    
-localStorage.setItem("prod",JSON.stringify(obj))
 window.addEventListener('load',displayItems(cartItems))
 
 function displayItems(cartItems){
@@ -136,7 +104,7 @@ function displayItems(cartItems){
                 </div>
                 <img src="https://assets.pharmeasy.in/web-assets/images/icChevronRight.svg" alt="">
             </div>
-            <button id="deliveryAddress">Proceed to Pay</button>
+            <button id="paymentpage">Proceed to Pay</button>
         </div>
         `;
         
@@ -216,3 +184,8 @@ function deleteProduct(index,cartItems){
     localStorage.setItem("prod",JSON.stringify(cartItems));
     displayItems(cartItems);
 }
+
+
+document.getElementById("paymentpage").addEventListener("click",function(){
+    window.location.href = "./payment.html"
+});
