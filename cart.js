@@ -44,13 +44,14 @@ function displayItems(cartItems){
         let totalPrice = 0;
         let totalDiscount = 0;
 
+        
         beforeItems.innerHTML = `
         <div id="countofItems">${cartItems.length} Items in your Cart</div>
         <div>
-            <div>
-                <img src="	https://assets.pharmeasy.in/web-assets/images/heart-green.svg" alt="">
-                <p>Saved for Later</p>
-            </div>
+        <div>
+        <img src="	https://assets.pharmeasy.in/web-assets/images/heart-green.svg" alt="">
+        <p>Saved for Later</p>
+        </div>
         </div>
         `
         cartProducts.innerHTML = cartItems.map((item)=>{
@@ -60,6 +61,8 @@ function displayItems(cartItems){
             cartTotal += priceToPay;
             totalPrice += price;
             totalDiscount += discount;
+
+            setIt(cartTotal,totalPrice,totalDiscount);
 
             return `
             <div>
@@ -189,3 +192,10 @@ function deleteProduct(index,cartItems){
 document.getElementById("paymentpage").addEventListener("click",function(){
     window.location.href = "./payment.html"
 });
+
+
+function setIt(cartTotal,totalPrice,totalDiscount){
+    localStorage.setItem("cart-total",cartTotal.toFixed(2));
+    localStorage.setItem("total-price",totalPrice.toFixed(2));
+    localStorage.setItem("total-discount",totalDiscount.toFixed(2));
+}
