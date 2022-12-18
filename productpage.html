@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            /* border: 2px solid green; */
+            justify-content: space-between;
+            /* height: 1000px; */
+            gap: 30px;
+
+        }
+        #products{
+            /* display: flex; */
+            /* border: 2px solid blue; */
+            width: 60%;
+            align-items: center;
+
+        }
+        #information{
+            /* border: 2px solid red; */
+            width: 40%;
+            height: 900px;
+    
+            
+
+        }
+        #products>div{
+            display: flex;
+            width: 65%;
+            /* border: 2px solid green; */
+            gap: 25px;
+            margin-left: 250px;
+            margin-top: 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            border-radius: 8px;
+
+        }
+        .prod{
+            width: 80%;
+            /* height: 60%; */
+            margin-top: 10px;
+            margin-left: 12px;
+        }
+        .imgdiv{
+            width: 10%;
+            /* height: 50px; */
+        }
+        .botdiv{
+            /* border: 2px solid violet; */
+            display: flex;
+            justify-content: space-between;
+            width:100%;
+        }
+        .datadiv{
+            /* border: 2px solid green; */
+            width: 80%;
+    
+        }
+        .botdiv>button{
+            background-color: #008B8B;
+            color: white;
+            font-size: 20px;
+            height: 45px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 12px;
+            border: none;
+            border-radius: 8px;
+        }
+        .s2{
+            display:flex;
+            margin-left: 15px;
+
+        }
+        .s2>p{
+            margin-left: 25px;
+        }
+        b{
+            font-size: 20px;
+        }
+        #division{
+            /* border: 2px solid yellow; */
+            width: 65%;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #s1{
+            display:flex;
+            margin-left: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #s1>p{
+            margin-left: 15px;
+        }
+        #s1>img{
+            width: 30px;
+            height:30px;
+            margin-top: 15px;
+        }
+        #viewcart{
+            color: white;
+            background-color: 	#008B8B;
+            padding: 10px 141px;
+            border: none;
+            font-size: 20px;
+            border-radius: 6px;
+            margin-bottom: 18px;
+        }
+        #showresult{
+            margin-left: 200px;
+            display: block;
+
+        }
+
+        /* ************* NavBar CSS Start   **********************/
+
+      .navbar{
+        /* position: fixed; */
+        background-color: #91d7d3;
+        height: 100px;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .navbar::before{
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        display: block;
+        content: "";
+        height: 100%;
+      
+      }
+      
+      .logo img {
+        width: 120px;
+        border-radius: 50px;
+        border: solid white;
+        margin-left: 5rem;
+      }
+      .nav {
+        width: 100%;
+        padding-top: 10px;
+      }
+      .nav ul {
+        display: flex;
+      }
+      .nav ul li {
+        list-style: none;
+      }
+      .nav ul li a {
+        width: 80%;
+        color: black;
+        padding: 16px 16px;
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      }
+      
+      .nav ul li input {
+        border-radius: 5px;
+        margin-top: -11px;
+        padding: 15px 10px 15px;
+        border: none;
+        background-color: rgb(239, 234, 234);
+        width: 400px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      
+      .nav ul li a:hover {
+        color: #ffd447;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        /* background-color: white; */
+      }
+      
+      
+      
+      /********************************** NavBar CSs Done ************************************/
+      /* #mydiv{
+        margin-top: 200px;
+      } */
+    
+
+        
+    
+    </style>
+</head>
+<body>
+   
+        <!-- --------NavBar Top============= -->
+        <div class="navbar">
+            <div class="logo">
+              <a href="/index.html"><img src="./images/bg1.jpg" alt="" /></a>
+            </div>
+            <div class="nav">
+              <ul>
+                <li><a href="">Medicine
+                </a></li>
+                <li><a href="">Lab Tests</a></li>
+                <li><a href="">Healthcare</a></li>
+                <li><a href="">Surgeries</a></li>
+                <li><a href=""><span>Health Blogs</span></a></li>
+                <li>
+                  <input type="search" placeholder="What are you looking for?" id="search" onkeyup="searchdata()"> />
+                </li>
+                <li><a href="">More</a><span>|</span></li>
+                <!-- <li><a href="">Sign Up/Sign In</a></li> -->
+                <li>
+                  <a href="#"><i class="fa-regular fa-bell"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </li>
+                <li>
+                  <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                </li>
+                <li>
+                  <a href="./cart.html"><i class="fa-regular fa-user"></i>Hello, Log in
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        
+ <div id="mydiv">
+    <h2 id="showresult"></h2>
+    <div id="container">
+        
+        <div id="products">
+            
+        </div>
+        <div id="information" >
+            <p ><b id="cart_number" >Please add item(s) to proceed</b></p>
+            <button id="viewcart">View Cart ></button>
+            <div id="division">
+                <div id="s1">
+                    <img src="https://res.cloudinary.com/hwfihgbjm/image/upload/v1619815694/production/fx4xpyy4bdvdzrhve8ss.png" alt=""width="40px">
+                    <p><b>What is a valid prescription?</b></p>
+                </div>
+                <hr>
+                <p style="margin-left: 15px;">A valid prescription contains:</p>
+                <div class="s2">
+                    <img src="https://inmoment.com/wp-content/uploads/2020/09/Elective-Surgery-Specialists.svg" alt=""width="40px">
+                    <p>Doctor Details</p>
+                </div>
+                <div class="s2">
+                    <img src="https://i.pinimg.com/564x/38/24/c0/3824c05b6583955d654f84fa352e899c.jpg" alt=""width="40px">
+                    <p>Date of Prescription</p>
+                </div>
+                <div class="s2">
+                    <img src="https://nolongerbound.com/wp-content/uploads/2020/12/NLB-age-requirements-icon.png" alt=""width="40px">
+                    <p>Patient Details</p>
+                </div>
+                <div class="s2" style="margin-bottom:20px;">
+                    <img src="https://img.freepik.com/premium-vector/jar-with-medicine-pills-pills-medical-kit-concepts-can-be-used-web-mobile-devices-vector_414360-2591.jpg?w=740" alt=""width="40px">
+                    <p>Dosage Details</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>   
+    <!-- Akash footer start here -->
+    
+    <!-- akash footer end here -->
+</body>
+</html>
+
+<script>
+    let mayurl="https://636ca1c3ab4814f2b2699397.mockapi.io/products/";
+    let info=JSON.parse(localStorage.getItem("meddata")) || [];
+    let cartdata=JSON.parse(localStorage.getItem("prod")) || [];
+    console.log(info)
+
+    async function getdata(){
+            try{
+                let res=await fetch(mayurl);
+                let data=await res.json();
+                info=data;
+                // console.log(data);
+                showdata(data);
+                let passdata=localStorage.setItem("meddata",JSON.stringify(info));
+            }
+            catch(err){
+                console.log(err);
+            }
+        }
+        getdata();
+
+
+
+        function showdata(info){
+
+            document.getElementById("products").innerHTML="";
+
+            info.forEach(function(element,index){
+                let box=document.createElement("div");
+
+                let imgdiv=document.createElement("div");
+                imgdiv.className="imgdiv";
+
+                let datadiv=document.createElement("div");
+                datadiv.className="datadiv"
+
+                let image=document.createElement("img");
+                image.src=element.avatar;
+                image.className="prod";
+
+                let title=document.createElement("h2");
+                title.innerText=element.Title;
+
+                let brand=document.createElement("p");
+                brand.innerText=element.createdAt;
+
+                let quantity=document.createElement("h3");
+                quantity.innerText=element.description;
+
+                let botdiv=document.createElement("div");
+                botdiv.className="botdiv";
+
+                let price=document.createElement("h2");
+                price.className="pricebutton";
+                price.innerText="Rs."+element.price;
+
+                let add=document.createElement("button");
+                add.className="addbutton";
+                add.innerText="Add to Cart";
+                add.addEventListener("click",function(){
+                    alert("Item added to cart")
+                    addtocart(element,index);
+                });
+                botdiv.append(price,add)
+                imgdiv.append(image);
+                datadiv.append(title,brand,quantity,botdiv)
+
+                box.append(imgdiv,datadiv);
+                document.getElementById("products").append(box);
+            })
+        }
+
+        // document.querySelector("#search-item").addEventListener("onkeydown",function(){
+        //     let data=document.querySelector("#search-item").value;
+        //     // let  data=localStorage.getItem("searchdata");
+            
+        //     console.log(searchvalue);
+        //     let searchdata=info.filter(function(element,index){
+        //         return element.Title.toLowerCase().includes(data.toLowerCase());
+        //     })
+        //     console.log(searchdata);
+        //     showdata(searchdata);
+        
+
+        // });
+        function searchdata(){
+            let data=document.querySelector("#search").value;
+            // let  data=localStorage.getItem("searchdata");
+            
+            console.log(data);
+            let searchdata=info.filter(function(element,index){
+                return element.Title.toLowerCase().includes(data.toLowerCase());
+            })
+            console.log(searchdata);
+            showdata(searchdata);
+            document.getElementById("showresult").innerText=`Showing all results for ${data}`;
+        }
+
+        function addtocart(element,index){
+            cartdata.push(element);
+            console.log(cartdata);
+            localStorage.setItem("prod",JSON.stringify(cartdata));
+            if(cartdata.length!=0)
+            {
+                document.getElementById("cart_number").innerText=`${cartdata.length} items in cart`;
+
+            }
+            
+        }
+        if(cartdata.length!=0)
+            {
+                document.getElementById("cart_number").innerText=`${cartdata.length} items in cart`;
+
+            }
+       
+
+
+
+
+
+</script>
