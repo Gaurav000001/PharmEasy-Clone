@@ -1,5 +1,6 @@
 let cartItems = JSON.parse(localStorage.getItem("prod")) || [];
 
+
 window.addEventListener('load',displayItems(cartItems))
 
 function displayItems(cartItems){
@@ -38,6 +39,7 @@ function displayItems(cartItems){
 
         bill.innerHTML = null;
         asset.innerHTML = null;
+        document.getElementById("container").style.marginTop = "0px";
     }
     else{
         let cartTotal = 0;
@@ -67,7 +69,7 @@ function displayItems(cartItems){
             return `
             <div>
                 <div>
-                    <img src=${item.avatar} alt="">
+                    <img id="avatar" src=${item.avatar} alt="">
                     <div>
                         <p>${item.Title}</p>
                         <p>${item.createdAt}</p>
@@ -77,7 +79,7 @@ function displayItems(cartItems){
                     </div>
                 </div>
                 <div>
-                    <img src="https://assets.pharmeasy.in/web-assets/images/icDelete.svg" class="delete" alt="">
+                    <img id="dltbtn" src="https://assets.pharmeasy.in/web-assets/images/icDelete.svg" class="delete" alt="">
                     <select name="" id="">
                         <option value="">Qty</option>
                         <option value="">1</option>
@@ -162,7 +164,23 @@ function displayItems(cartItems){
     let all_delete_btn = document.querySelectorAll(".delete");
     all_delete_btn.forEach((item,index)=>{
         item.addEventListener("click",function(){
-            deleteProduct(index,cartItems)
+            swal({
+                text: "Are you sure to remove this Product!",
+                buttons: ["Remove", "Cancel"],
+                dangerMode: true,
+              })
+              .then((willDelete) => {
+                    if (willDelete) {
+                    
+                    } 
+                    else {
+                        swal("Product has been Deleted from Cart!", {
+                        icon: "success",
+                        });
+                        deleteProduct(index,cartItems);
+                    }
+                });
+              
         })
     })
 
