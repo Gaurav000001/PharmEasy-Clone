@@ -32,6 +32,24 @@ let dis_amazon = document.querySelector(".amazonbtn");
 let dis_mobi = document.querySelector(".mobibtn");
 let dis_cash = document.querySelector(".cashbtn");
 
+dis_cash.addEventListener("click",function(){
+    swal({
+        title: "Order Placed Succefully!",
+        text: "Your Order has been Placed Successfully",
+        icon: "success",
+        buttons: ["Stay!", "Visit Home"],
+        dangerMode: true,
+    })
+    .then((willDelete) => {
+        if (willDelete) {
+          window.location.href = "./index.html"
+        } else {
+          
+        }
+    });
+      
+})
+
 paytm.addEventListener("click",function(){
     dis_paytm.classList.remove("dis");
     dis_amazon.classList.add("dis");
