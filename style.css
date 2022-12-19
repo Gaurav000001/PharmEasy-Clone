@@ -24,6 +24,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 1000;
       }
       .navbar::before{
         position: fixed;
@@ -236,6 +237,8 @@
     place-items: center;
     overflow: hidden;
     border-radius: 1%;
+    /* position: relative;
+    z-index: -1000; */
 }
 
 .slide-img>img {
