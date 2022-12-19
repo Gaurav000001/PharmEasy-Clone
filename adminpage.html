@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page For Ayu</title>
+    <script
+    src="https://kit.fontawesome.com/b06a377e67.js"
+    crossorigin="anonymous"
+  ></script>
+    <style>
+        #container{
+            display: flex;
+            /* border: 2px solid green; */
+            justify-content: space-between;
+            /* height: 1000px; */
+            gap: 30px;
+
+        }
+        #products{
+            /* display: flex; */
+            /* border: 2px solid blue; */
+            width: 60%;
+            align-items: center;
+
+        }
+        #information{
+            /* border: 2px solid red; */
+            width: 40%;
+            height: 900px;
+    
+            
+
+        }
+        #products>div{
+            display: flex;
+            width: 65%;
+            /* border: 2px solid green; */
+            gap: 25px;
+            margin-left: 250px;
+            margin-top: 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            border-radius: 8px;
+
+        }
+        .prod{
+            width: 80%;
+            /* height: 60%; */
+            margin-top: 10px;
+            margin-left: 12px;
+        }
+        .imgdiv{
+            width: 10%;
+            /* height: 50px; */
+        }
+        .botdiv{
+            /* border: 2px solid violet; */
+            display: flex;
+            justify-content: space-between;
+            width:100%;
+        }
+        .datadiv{
+            /* border: 2px solid green; */
+            width: 80%;
+    
+        }
+        .botdiv>button{
+            background-color: #008B8B;
+            color: white;
+            font-size: 20px;
+            height: 45px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 12px;
+            border: none;
+            border-radius: 8px;
+        }
+        .s2{
+            display:flex;
+            margin-left: 15px;
+
+        }
+        .s2>p{
+            margin-left: 25px;
+        }
+        b{
+            font-size: 20px;
+        }
+        #division{
+            /* border: 2px solid yellow; */
+            width: 65%;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #s1{
+            display:flex;
+            margin-left: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #s1>p{
+            margin-left: 15px;
+        }
+        #s1>img{
+            width: 30px;
+            height:30px;
+            margin-top: 15px;
+        }
+        #viewcart{
+            color: white;
+            background-color: 	#008B8B;
+            padding: 10px 141px;
+            border: none;
+            font-size: 20px;
+            border-radius: 6px;
+            margin-bottom: 18px;
+        }
+        #showresult{
+            margin-left: 200px;
+            display: block;
+
+        }
+
+ /* ************* NavBar CSS Start   **********************/
+ .navbar{
+        margin-top: 0px;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        position: fixed;
+        background-color: #91d7d3;
+        height: 100px;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+
+      .navbar::before{
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        display: block;
+        content: "";
+        height: 100%;
+      
+      }
+      
+      .logo img {
+        width: 120px;
+        border-radius: 50px;
+        border: solid white;
+        margin-left: 5rem;
+      }
+      .nav {
+        width: 100%;
+        padding-top: 10px;
+      }
+      .nav ul {
+        display: flex;
+      }
+      .nav ul li {
+        list-style: none;
+      }
+      .nav ul li a {
+        width: 80%;
+        color: black;
+        padding: 16px 16px;
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      }
+      
+      .nav ul li input {
+        border-radius: 5px;
+        margin-top: -11px;
+        padding: 15px 10px 15px;
+        border: none;
+        background-color: rgb(239, 234, 234);
+        width: 400px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      
+      .nav ul li a:hover {
+        color: #ffd447;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        /* background-color: white; */
+        font-size: .96rem;
+      }
+
+      .empty{
+    padding-top: 100px;
+}
+      
+      
+      
+      /********************************** NavBar CSs Done ************************************/
+      /* #mydiv{
+        margin-top: 200px;
+      } */#info{
+        /* border: 2px solid red; */
+        background-color: 	#91d7d3;
+        color: black;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      }
+      #prod_name {
+        height: 20px;
+        font-size: 20px;
+      }
+      #prod_image{
+        height: 20px;
+        font-size: 20px;
+      }
+      #prod_cat{
+        height: 20px;
+        font-size: 20px;
+      }
+      #prod_brand{
+        height: 20px;
+        font-size: 20px;
+      }
+      #prod_quant{
+        height: 20px;
+        font-size: 20px;
+      }
+      #prod_id{
+        height: 20px;
+        font-size: 20px;
+      }
+      #prod_price{
+        height: 20px;
+        font-size: 20px;
+      }
+      #addtodata{
+        display: block;
+        font-size: 25px;
+        margin-bottom: 25px;
+        margin: auto;
+        margin-top: 20px;
+        color: white;
+        background-color: #20B2AA;
+        border-radius: 6px;
+        border: none;
+        padding: 10px 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+      }
+    
+
+        
+    
+    </style>
+</head>
+<body>
+   
+        <!-- --------NavBar Top============= -->
+                <div class="navbar">
+                  <div class="logo">
+                    <a href="/index.html"><img src="./images/bg1.jpg" alt="" /></a>
+                  </div>
+                  <div class="nav">
+                    <ul>
+                      <li><a href="./productpage.html">Medicine
+                      </a></li>
+                      <li><a href="./productpage.html">Lab Tests</a></li>
+                      <li><a href="./productpage.html">Healthcare</a></li>
+                      <li><a href="./productpage.html">Surgeries</a></li>
+                      <li><a href="./productpage.html"><span>Health Blogs</span></a></li>
+                      <li>
+                        <input type="search" id="search" placeholder="What are you looking for?" onkeyup="searchdata()" />
+                      </li>
+                      <li><a href="./productpage.html">More</a><span>|</span></li>
+                      <!-- <li><a href="">Sign Up/Sign In</a></li> -->
+                      <li>
+                        <a href="#"><i class="fa-regular fa-bell"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                      </li>
+                      <li>
+                        <a href="./signup.html"><i class="fa-regular fa-user"></i>  Hello, Log in
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="empty"></div>
+        
+ <div id="mydiv">
+    <h2 id="showresult"></h2>
+    <div id="container">
+        
+        <div id="products">
+            
+        </div>
+        <div id="information" >
+            <div id="info">
+                <h3>Product Name:</h3>
+                
+                <input type="text" id="prod_name" placeholder="Enter Product Name">
+                <hr>
+                <h3>Image:</h3>
+                <input type="text" id="prod_image" placeholder="Enter Product Image">
+                <hr>
+                <h3>Category of Product</h3>
+                <input type="text" id="prod_cat" placeholder="Enter Product Category">
+                <hr>
+                <h3>Brand Name</h3>
+                <input type="text" id="prod_brand" placeholder="Enter Product Category">
+                <hr>
+                <h3>Quantity</h3>
+                <input type="text" id="prod_quant" placeholder="Enter Product Quantity">
+                <hr>
+                <h3>Product Id</h3>
+                <input type="text" id="prod_id" placeholder="Enter Product Id">
+                <hr>
+                <h3>Price of Product</h3>
+                <input type="number" id="prod_price" placeholder="Enter Product Price">
+                <hr>
+                <button id="addtodata">Add to Database</button>
+            </div>
+        </div>
+
+    </div>
+</div>   
+    <!-- Akash footer start here -->
+    
+    <!-- akash footer end here -->
+</body>
+</html>
+
+<script>
+    let mayurl="https://636ca1c3ab4814f2b2699397.mockapi.io/products/";
+    let info=JSON.parse(localStorage.getItem("meddata")) || [];
+    let cartdata=JSON.parse(localStorage.getItem("prod")) || [];
+    console.log(info)
+
+    async function getdata(){
+            try{
+                let res=await fetch(mayurl);
+                let data=await res.json();
+                info=data;
+                // console.log(data);
+                showdata(data);
+                let passdata=localStorage.setItem("meddata",JSON.stringify(info));
+            }
+            catch(err){
+                console.log(err);
+            }
+        }
+        getdata();
+
+
+
+        function showdata(info){
+
+            document.getElementById("products").innerHTML="";
+
+            info.forEach(function(element,index){
+                let box=document.createElement("div");
+
+                let imgdiv=document.createElement("div");
+                imgdiv.className="imgdiv";
+
+                let datadiv=document.createElement("div");
+                datadiv.className="datadiv"
+
+                let image=document.createElement("img");
+                image.src=element.avatar;
+                image.className="prod";
+
+                let title=document.createElement("h2");
+                title.innerText=element.Title;
+
+                let brand=document.createElement("p");
+                brand.innerText=element.createdAt;
+
+                let quantity=document.createElement("h3");
+                quantity.innerText=element.description;
+
+                let botdiv=document.createElement("div");
+                botdiv.className="botdiv";
+
+                let price=document.createElement("h2");
+                price.className="pricebutton";
+                price.innerText="Rs."+element.price;
+
+                let add=document.createElement("button");
+                add.className="addbutton";
+                add.innerText="Delete";
+                add.addEventListener("click",function(){
+                    alert("Item removed from Database")
+                    removefromdata(element,index);
+                });
+                botdiv.append(price,add)
+                imgdiv.append(image);
+                datadiv.append(title,brand,quantity,botdiv)
+
+                box.append(imgdiv,datadiv);
+                document.getElementById("products").append(box);
+            })
+        }
+
+        // document.querySelector("#search-item").addEventListener("onkeydown",function(){
+        //     let data=document.querySelector("#search-item").value;
+        //     // let  data=localStorage.getItem("searchdata");
+            
+        //     console.log(searchvalue);
+        //     let searchdata=info.filter(function(element,index){
+        //         return element.Title.toLowerCase().includes(data.toLowerCase());
+        //     })
+        //     console.log(searchdata);
+        //     showdata(searchdata);
+        
+
+        // });
+        function searchdata(){
+            let data=document.querySelector("#search").value;
+            // let  data=localStorage.getItem("searchdata");
+            
+            console.log(data);
+            let searchdata=info.filter(function(element,index){
+                return element.Title.toLowerCase().includes(data.toLowerCase());
+            })
+            console.log(searchdata);
+            showdata(searchdata);
+            document.getElementById("showresult").innerText=`Showing all results for ${data}`;
+        }
+
+        function addtocart(element,index){
+            cartdata.push(element);
+            console.log(cartdata);
+            localStorage.setItem("prod",JSON.stringify(cartdata));
+            if(cartdata.length!=0)
+            {
+                document.getElementById("cart_number").innerText=`${cartdata.length} items in cart`;
+
+            }
+            
+        }
+        // if(cartdata.length!=0)
+            // {
+            //     document.getElementById("cart_number").innerText=`${cartdata.length} items in cart`;
+
+            // }
+       
+document.getElementById("addtodata").addEventListener("click",add_data);
+
+function add_data(){
+  alert("Data added to Database")
+    
+    let prod_name=document.getElementById("prod_name").value;
+    let photo=document.getElementById("prod_image").value;
+    let category=document.getElementById("prod_cat").value;
+    let brand=document.getElementById("prod_brand").value;
+    let quantity=document.getElementById("prod_quant").value;
+    let prodid=document.getElementById("prod_id").value;
+    let price=document.getElementById("prod_price").value;
+    let prod_data= {
+        "Title":prod_name,
+        "avatar":photo,
+        "category":category,
+        "createdAt":brand,
+        "description":quantity,
+        "id":prodid,
+        "price":`${price}`
+    }
+    
+
+    fetch("https://636ca1c3ab4814f2b2699397.mockapi.io/products/",{
+        method:"POST",
+        headers:{
+            "Content-Type":"Application/json"
+        },
+        body:JSON.stringify(prod_data)
+
+    }).then((res)=>res.json()).then((response)=>{console.log(response); 
+        showdata(response)});
+}
+
+
+function removefromdata(element,index){
+  fetch(`https://636ca1c3ab4814f2b2699397.mockapi.io/products/${index}`,{
+    method:"DELETE",
+  }).then((res)=>res.json()).then((response)=>{console.log(response);
+    showdata(info)}); 
+  
+}
+
+
+
+
+
+</script>
