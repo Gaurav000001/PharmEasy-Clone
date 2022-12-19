@@ -6,14 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
+    <link rel="stylesheet" href="slider.css">
     <script
       src="https://kit.fontawesome.com/b06a377e67.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./slider.js" defer></script>
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Google fonts -->
+    
 </head>
 
 <body>
@@ -47,20 +56,82 @@
               <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
             </li>
             <li>
-              <a href="./cart.html"><i class="fa-regular fa-user"></i>Hello, Log in
+              <a href="./signup.html"><i class="fa-regular fa-user"></i>  Hello, Log in
               </a>
             </li>
           </ul>
         </div>
       </div>
+      <div class="empty"></div>
+   <!-- NavBar Ends Here -->
 
-    <div class="top">
-        <h2>Lab test by health care concern</h2>
-        <p><i>powered by thyrocare</i> </p>
+    <div id="looking">
+        <div class="looking-h3">
+            <h3>What are you looking for?</h3>
+        </div>
+
+        
+        <div class="looking-img">
+
+            <div>
+               <a href=""><img src="./images/looking/1.jpg" alt=""></a> 
+            </div>
+            <div>
+                <img src="./images/looking/2.jpg" alt="">
+            </div>
+            <div>
+                <img src="./images/looking/3.jpg" alt="">
+            </div>
+            <div>
+                <img src="./images/looking/4.jpg" alt="">
+            </div>
+            <div>
+                <img src="./images/looking/5.jpg" alt="">
+            </div>
+            <div>
+                <img src="./images/looking/6.jpg" alt="">
+            </div>
+            <div>
+                <img src="./images/looking/7.jpg" alt="">
+            </div>
+            <div>
+                <img src="./images/looking/8.jpg" alt="">
+            </div>
+
+        </div>
+
+
+    </div>
+
+<!--_________Offer Div start  -->
+
+<div id="offer">
+    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/836fef100bc-YAYY550.jpg" alt="">
+    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/760565c68b5-VIBES27.jpg" alt="">
+</div>
+<div class="offerH"><h2>Offers Just for You</h2></div>
+<div id="offer2">
+   <a href=""><img src="./images/offer/1.jpg" alt=""></a> 
+   <a href=""><img src="./images/offer/2.jpg" alt=""></a> 
+   <a href="./signup.html"><img src="./images/offer/3.jpg" alt=""></a> 
+</div>
+<div class="offerH2"><h2>Payment Offers</h2></div>
+<div id="offer3">
+    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/a93d45ef9eb-HSBC.jpg?dim=1440x0" alt="">
+    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/f3c446e4108-AMAZON.jpg?dim=1440x0" alt="">
+    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/9466405c308-au.jpg?dim=1440x0" alt="">
+ </div>
+
+
+<!--_________Offer Div start end -->
 
 
 
 
+
+   <!-- Slider Starts Here -->
+      <div class="top">
+        
         <div class="container">
 
             <div class="slide-container">
@@ -120,133 +191,242 @@
                     </div>
 
                 </div>
-
+                
             </div>
+            
         </div>
 
         <!-- -------------------Slider Ends Here----------------- -->
-        <!-- --------------------------Categories Section start here------ -->
 
-        <h2> Shop By Categories</h2>
-        <div id="category">
-
-            <div class="img"> <a href="#" target="_blank"><img src="/images/category/c1.webp"> </a>
-            </div>
-            <div class="img"> <a href="#" target="_blank"><img src="/images/category/c2.webp"> </a>
-            </div>
-            <div class="img"> <a href="#" target="_blank"><img src="/images/category/c3.webp"> </a>
-            </div>
-            <div class="img"> <a href="#" target="_blank"><img src="/images/category/c4.webp"> </a>
-            </div>
-            <div class="img"> <a href="#" target="_blank"><img src="/images/category/c5.webp"> </a>
-            </div>
-            <div class="img"> <a href="#" target="_blank"><img src="/images/category/c6.webp"> </a>
-            </div>
         </div>
+        
+                <!-- --------------------------Categories Section start here------ -->
+        <div id="cat">
+            <div><h2> Shop By Categories</h2></div>
+            </div>
+            <div class="slider">
 
-
-        <h2> Offers specially for you</h2>
-        <div class="container2">
-
-            <div class="slide-container2">
-                <!-- **************** 01 ******************** -->
-                <div>
-
-                    <div class="slide-img2">
-                        <img src="/images/slider2/a.webp" alt="">
+                <div class="wrapper">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <div class="carousel" id="slider_img">
+                      <img src="https://cms-contents.pharmeasy.in/carousel_item/1466c422fcd-Sugerfree.png?dim=1440x0" alt="img" draggable="false">
+                      <img src="https://cms-contents.pharmeasy.in/carousel_item/3eb4eb6bfbe-App_Himalaya.jpg?dim=1440x0" alt="img" draggable="false">
+                      <img src="https://cms-contents.pharmeasy.in/carousel_item/62668bab7a1-AccuChek-min.png?dim=1440x0" alt="img" draggable="false">
+                      <img src="https://cms-contents.pharmeasy.in/carousel_item/d0f595be419-Savlonv2.png?dim=1440x0" alt="img" draggable="false">
+                      <img src="https://cms-contents.pharmeasy.in/carousel_item/3c344faad99-App_Featured-J.jpg?dim=1440x0" alt="img" draggable="false">
+                      <img src="https://cms-contents.pharmeasy.in/carousel_item/d3481485e73-App_stayfree.jpg?dim=1440x0" alt="img" draggable="false">
+                      <img src="https://cms-contents.pharmeasy.in/carousel_item/f2d61678901-Ensure.png?dim=1440x0" alt="img" draggable="false">
+                      <img src="images/slider1/s8.jpg" alt="img" draggable="false">
+                    
                     </div>
-                </div>
-                <!-- **************** 02 ******************** -->
-                <div>
-                    <div class="slide-img2">
-                        <img src="/images/slider2/b.webp" alt="">
-                    </div>
-
-                </div>
-                <!-- **************** 03 ******************** -->
-                <div>
-                    <div class="slide-img2">
-                        <img src="/images/slider2/c.webp" alt="">
-                    </div>
-
-                </div>
-                <!-- **************** 04 ******************** -->
-                <div>
-                    <div class="slide-img2">
-                        <img src="/images/slider2/d.webp" alt="">
-                    </div>
-
-                </div>
-                <!-- **************** 05 ******************** -->
-                <div>
-                    <div class="slide-img2">
-                        <img src="/images/slider2/e.webp" alt="">
-                    </div>
-
-                </div>
-                <!-- **************** 06 ******************** -->
-                <div>
-                    <div class="slide-img2">
-                        <img src="/images/slider2/c.webp" alt="">
-                    </div>
-
-                </div>
-                <!-- **************** 07 ******************** -->
-                <div>
-                    <div class="slide-img2">
-                        <img src="/images/slider2/a.webp" alt="">
-                    </div>
-
-                </div>
-                <!-- **************** 08 ******************** -->
-                <div>
-                    <div class="slide-img2">
-                        <img src="/images/slider2/b.webp" alt="">
-                    </div>
-
-                </div>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                  </div>
 
             </div>
+            
         </div>
+        <!-- --------------------------Categories Section end here------ -->
 
+    <!-- Banner Section Start Here -->
 
-
-
+    <div id="banner">
+        <img width="90%" src="./images/offer/banner.jpg" alt="">
     </div>
 
-    <!-- --------------------------Categories Section end here------ -->
 
-    <!-- ==========================ARticle SEction Start-------- -->
+    <!-- Banner SEcion End here -->
 
+    <!-- Concern Section start here -->
 
-    <div>
-        <h2>HealthCare Articles</h2>
-        <div class="Articles">
+    <div id="concern">
+        <div class="con-1">
+            <h2>Shop by Concern</h2>
+            <p>Products are handpicked by experts</p>
+        </div>
+        <div class="con-2">
+            <div>
+                <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/923a665cc6f-Skin_care.png?dim=128x0" alt="">
+                <h5>Skin Care</h5>
+            </div>
 
-            <div class="imgA"> <a href="https://www.nejm.org/coronavirus" target="_blank">
-                    <img src="/images/art/a.jpg"> </a>
+            <div>
+                <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/18d2e2ee86b-Vitamins.png?dim=128x0" alt="">
+                <h5>Vitamins & Supplements</h5>
             </div>
-            <div class="imgA"> <a
-                    href="https://www.who.int/news-room/fact-sheets/detail/diabetes#:~:text=Diabetes%20is%20a%20chronic%20disease,hormone%20that%20regulates%20blood%20glucose."
-                    target="_blank"><img src="/images/art/b.jpg"> </a>
+
+            <div>
+                <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/0af9ac9f350-Diabetes.webp?dim=128x0" alt="">
+                <h5>Diabetes Care & Sugar</h5>
             </div>
-            <div class="imgA"> <a href="https://www.webmd.com/heart/heart-health-tips" target="_blank"><img
-                        src="/images/art/c.jpg"> </a>
+
+            <div>
+                <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/24a0d2c733e-Heart.webp?dim=128x0" alt="">
+                <h5>Cardiac Care</h5>
             </div>
-            <div class="imgA"> <a href="https://www.newfoodmagazine.com/article/" target="_blank"><img
-                        src="/images/art/d.jpg"> </a>
+
+            <div>
+                <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/68369c9df98-Pregnancy.webp?dim=128x0" alt="">
+                <h5>Baby & Mom Care</h5>
             </div>
-            <div class="imgA"> <a
-                    href="https://www.hindustantimes.com/photos/lifestyle/skincare-tips-to-help-you-glow-during-the-wedding-season-101670936199093.html"
-                    target="_blank"><img src="/images/art/e.jpg"></a>
+
+            <div>
+                <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/26bbd7a9e98-Lifestyle.webp?dim=128x0" alt="">
+                <h5>Lifestyle Disorders</h5>
             </div>
-            <div class="imgA"> <a href="https://www.healthline.com/health/beauty-skin-care/vitamin-c-serum-benefits"
-                    target="_blank"><img src="/images/art/f.jpg"> </a>
+
+            <div>
+                <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/16ab65c0826-Covid.webp?dim=128x0" alt="">
+                <h5>Lifestyle Disorders</h5>
             </div>
         </div>
     </div>
 
-    <!-- ==========================ARticle SEction Ends here-------- -->
+    <!-- Concern Section end here -->
+
+
+
+    <!-- Article Section Start Here -->
+
+    <div id="article">
+        <h3>Health Articles</h3>
+        <div id="art-image">
+            <a href="#">
+                <div>
+                    <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/10/06125332/12-5.jpg?dim=1440x0" alt="">
+                    <p>Benefits of Bakasana ( Crane Pose) and How to Do it By Dr. Ankit Sankhe</p>
+                </div>
+            </a>
+            <a href="">
+                
+                <div>
+                    <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/10/06125500/9-3.jpg?dim=1440x0" alt="">
+                    <p>Benefits of Bakasana ( Crane Pose) and How to Do it By Dr. Ankit Sankhe</p>
+                </div>
+
+            </a>
+            <a href="">
+
+                <div>
+                    <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/10/06125628/6-3.jpg?dim=1440x0" alt="">
+                    <p>Benefits of Bakasana ( Crane Pose) and How to Do it By Dr. Ankit Sankhe</p>
+                </div>
+
+            </a>
+            <a href="">
+
+                <div>
+                    <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/10/06125758/19.jpg?dim=1440x0" alt="">
+                    <p>Benefits of Bakasana ( Crane Pose) and How to Do it By Dr. Ankit Sankhe</p>
+                </div>
+
+            </a>
+            <a href="">
+
+                <div>
+                    <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/10/06125931/4-6.jpg?dim=1440x0" alt="">
+                    <p>Benefits of Bakasana ( Crane Pose) and How to Do it By Dr. Ankit Sankhe</p>
+                </div>
+
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Article Section End Here -->
+
+    
+
+    <div class="slider">
+
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel" id="slider_img">
+              <img src="https://cdn01.pharmeasy.in/dam/banner/banner/810889b6613-babycare-min.png?dim=1440x0" alt="img" draggable="false">
+              <img src="https://cdn01.pharmeasy.in/dam/banner/banner/5e9dc201ab9-DevicesClearanceStore.jpg?dim=1440x0" alt="img" draggable="false">
+              <img src="https://cdn01.pharmeasy.in/dam/banner/banner/ed87375d79f-DiabeticCare-min.png?dim=1440x0" alt="img" draggable="false">
+              <img src="https://cdn01.pharmeasy.in/dam/banner/banner/ee420d12d95-category_Sexual-wellnes.jpg?dim=1440x0" alt="img" draggable="false">
+              <img src="https://cdn01.pharmeasy.in/dam/banner/banner/03b538c95bb-abcfd6435fe-FragSB.jpeg?dim=1440x0" alt="img" draggable="false">
+              <img src="https://cdn01.pharmeasy.in/dam/banner/banner/d91d8a17483-b80e93634e8-Now-never_CB.jpg?dim=1440x0" alt="img" draggable="false">
+              <img src="https://cdn01.pharmeasy.in/dam/banner/banner/9b42ab4d9ab-home-page-banner_nutrition-.jpg?dim=1440x0" alt="img" draggable="false">
+              <img src="https://cdn01.pharmeasy.in/dam/banner/banner/cea76587546-Personal-care_c.jpg?dim=1440x0" alt="img" draggable="false">
+            
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+          </div>
+
+    </div>
+
+
+    <!-- -------------BAnner 2 start here----------- -->
+
+    <div id="banner2">
+        <a href="">
+            <img width="95%" src="./images/offer/b2.jpg" alt="">    
+        </a>
+    </div>
+    <div id="banner3">
+
+        <a href="https://apps.apple.com/IN/app/id982432643?mt=8">
+
+            <img width="95%" src="./images/offer/b3.jpg" alt="">
+
+        </a>
+
+    </div>
+
+    <div id="banner4">
+
+        <a href="">
+
+            <img width="90%" src="./images/offer/b4.jpg" alt="">
+
+        </a>
+
+    </div>
+
+
+    <!-- -------------BAnner 2 End here----------- -->
+
+    <div id="string">
+        <span><h3>Your One-Stop Online Pharmacy - PharmEasy</h3></span>
+        <div class="st-1">
+            <h5>We've got India Covered!</h5>
+            <p>We now deliver in 1000+ cities and towns across 22000+ pin codes. We thereby cover every nook and corner of the country! The major cities in which we deliver include Mumbai, Kolkata, Delhi, Bengaluru, Ahmedabad, Hyderabad, Chennai, Thane, Howrah, Pune, Gurgaon, Navi Mumbai, Jaipur, Noida, Lucknow, Ghaziabad & Vadodara.</p>
+        </div>
+
+        <div class="st-1">
+            <h5>Say Goodbye to All Your Healthcare Worries With PharmEasy!</h5>
+            <p>PharmEasy is here to help you take it easy! We are amongst one of India's top online pharmacy and medical care platforms. It enables you to order pharmaceutical and healthcare products online by connecting you to registered retail pharmacies and get them delivered to your home. We are an online medical store, making your purchase easy, simple, and affordable!</p>
+        </div>
+
+        <div class="st-1">
+            <h5>How Are We Making Lives Simpler With Our Online Medical Store?</h5>
+            <p>Our doorstep delivery service is available in PAN-India across top cities like Bangalore, Delhi, Mumbai, Kolkata, Hyderabad, Gurgaon, Noida, Pune, etc. Our online medical store also allows you to choose from 1 lakh+ products including OTC products and medical equipment. PharmEasy is a one-stop online medical platform where you can also book diagnostic tests including blood tests, full-body checkups, and other preventive health check-ups at an affordable cost, right from the comfort of your home. We have partnered with trusted & certified labs that arrange for a sample pick-up from the convenience of your home. They also provide you with timely reports.</p>
+        </div>
+
+        <div class="st-1">
+            <h5>Why Are We The Most Preferred Online Pharmacy?</h5>
+            <p>Lucrative offers on our platform allow you to make payment online and via various payment wallets at a discounted price. Alternatively, you can also choose to pay cash on delivery as we deliver the products at your doorstep. We cater to all your pharmaceutical needs and also make ordering medicines online a hassle-free experience for you. We connect you only with registered retail pharmacies & certified diagnostic labs. We ensure that healthcare is affordable to all and make the process of ordering online simple.</p>
+        </div>
+
+        <div class="st-1">
+            <h5>Sit Back & Relax While You Get Your Essentials Delivered Every Month!</h5>
+            <p>It’s tough to remember to refill every month, especially in the case of chronic diseases. PharmEasy’s subscription service not only ensures that you are reminded of your refills but also makes sure that you are never out on your medical essentials. You will get a reminder every month and your order will be delivered at your convenience!</p>
+        </div>
+
+        <div class="st-1">
+            <h5>Access medical and health information:</h5>
+            <p>PharmEasy delivers reliable and accurate medical information that has been carefully written, vetted and validated by our health experts. Our specialists curate high-quality and most reliable literature about medicines, illnesses, lab tests, Ayurvedic and over the counter health products.</p>
+        </div>
+
+        <div class="st-1">
+            <h5>We Believe in ‘Simplifying Healthcare, Impacting Lives!’</h5>
+        </div>
+    </div>
+
+
+    
+
 
     <!-- ----------------------Foooter Start Here -->
 
