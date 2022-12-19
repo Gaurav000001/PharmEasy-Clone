@@ -80,6 +80,127 @@
       
       /********************************** NavBar CSs Done ************************************/
 
+/*888888888888 Looking Div 888888888888*/
+
+#looking{
+
+    /* width: 90%; */
+    margin: auto;
+    padding: 1rem 2rem;
+    
+}
+
+#looking h3{
+
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.looking-h3{
+    background: rgb(230,249,243);
+    background: linear-gradient(90deg, rgba(230,249,243,1) 73%, rgba(218,175,255,1) 100%);
+    border-radius: 20px;
+
+}
+
+.looking-img{
+    padding-top: 20px;
+    /* display: grid;
+    grid-template-columns: repeat(8,8fr);
+    gap: 5px; */
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding-left: 80px;
+}
+
+.looking-img img{
+
+    width: 70%;
+
+}
+
+.looking-img>div:hover{
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+/*88888888 Looking Div End 8888888888888*/
+
+/* offer Div Start ******** */
+
+#offer{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    /* margin: auto; */
+    padding-top: 50px;
+}
+
+#offer img{
+    border-radius: 20px;
+    width: 40%;
+}
+
+#offer2{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#offer2 img{
+    border-radius: 20px;
+    width: 85%;
+}
+
+
+#offer2 img:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+#offer3{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#offer3 img{
+    border-radius: 20px;
+    width: 30%;
+}
+
+#offer3 img:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+.offerH{
+
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-left: 5rem;
+
+}
+.offerH2{
+
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-left: 5rem;
+
+}
+/* offer Div Start End ******** */
+
+
 
 .top {
     margin: auto;
@@ -90,38 +211,29 @@
 
 }
 
-h2 {
+#cat h2{
     font-size: 30px;
-    padding-left: 4rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    padding-left: 5rem;
 
 }
 
-.top>p {
-
-    font-size: 1.8rem;
-    padding-left: 4rem;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-weight: 400;
-
+.empty{
+    padding-top: 100px;
 }
 
 .container {
     height: 321px;
     width: 90%;
-    /* border: 1px solid black; */
-    /* background-color: rgb(104, 106, 106); */
     background: rgb(233, 255, 248);
     background: linear-gradient(90deg, rgba(233, 255, 248, 1) 40%, rgba(175, 255, 251, 1) 99%);
     margin: auto;
     margin-top: 300px;
     margin-bottom: 50px;
     padding-top: 200px;
-
     display: grid;
     place-items: center;
-    /* position: relative; */
     overflow: hidden;
     border-radius: 1%;
 }
@@ -159,106 +271,167 @@ h2 {
     perspective: 100px;
 }
 
-.container2 {
-    height: 321px;
+
+
+
+#category>div:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+/* Banner Css start */
+
+#banner{
     width: 90%;
-    /* border: 1px solid black; */
-    /* background-color: rgb(104, 106, 106); */
-    background: rgb(233, 255, 248);
-    background: linear-gradient(90deg, rgba(233, 255, 248, 1) 40%, rgba(175, 255, 251, 1) 99%);
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
-
-    display: grid;
-    place-items: center;
-    /* position: relative; */
-    overflow: hidden;
-    border-radius: 1%;
+    padding-bottom: 3rem;
+    padding-left: 8rem;
+    /* padding-top: 5000px; */
 }
 
-.slide-img2>img {
-    height: 200px;
-    width: 350px;
-
-}
-
-.slide-container2 {
-    display: flex;
-    width: calc(250px*18);
-    animation: scroll 20s linear infinite;
-
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(calc(-250px * 9));
-    }
-}
-
-.slide-img2 {
-    height: 150 px;
-    width: 350px;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    perspective: 100px;
-}
-
-
-
-#category {
-    /* border: 2px solid red; */
-    margin: 20px;
-    height: 300px;
-    display: grid;
-    grid-template-columns: repeat(12, 2fr);
-    /* justify-content: space-evenly; */
-    /* padding: 20px 20px; */
-    gap: 1rem;
+#banner2{
+    /* padding-bottom: 3rem;
+    padding-left: 5rem;
     padding-top: 2rem;
+    padding-right: 0; */
+    padding: 2rem 0 3rem 5rem;
 }
 
-#category img {
-    height: 200px;
-    width: 200px;
-    margin-bottom: 10px;
-    border-radius: 10px 10px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+#banner3{
+    padding: 2rem 0 3rem 5rem;
 }
 
-.Articles {
-    /* border: 2px solid red; */
-    background: rgb(233, 255, 248);
-    background: linear-gradient(90deg, rgba(233, 255, 248, 1) 31%, rgba(218, 175, 255, 1) 100%);
-    margin: 20px;
-    height: 300px;
+#banner4{
+    padding: 2rem 0 3rem 5rem;
+}
+
+/* Banner css End */
+
+/* !concern css start */
+
+#concern{
+    width: 90%;
+    margin: auto;
+}
+
+.con-1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+
+.con-1 p{
+    padding-top: 20px;
+}
+
+.con-2{
     display: flex;
-    justify-content: space-evenly;
-    padding: 20px 20px;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.con-2 h5{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+}
+
+.con-2 img{
+    width: 60%;
+}
+
+
+
+/* !concern css end */
+
+
+
+/** Article Css  */
+
+#article{
+    width: 90%;
+    padding-left: 3rem;
+}
+
+#article h3{
+
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    /* text-align: center;   */
 
 }
 
-.imgA {
-    padding: 34px;
-    /* border: 1px solid red; */
-    width: 10%;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 20px;
+#article p{
+
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    text-align: left;  
+    padding-left: 10px;
+
 }
 
-.Articles img {
-    border-radius: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    padding-bottom: 15px;
+#art-image{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /* margin: auto;    */
+    gap: 60px;
 }
+
+
+
+#art-image>a>div{
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+#art-image img{
+    width: 120%;
+    height: 230px;
+    border-radius: 10px;
+
+}
+
+#art-image img:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/** Article Css End */
+
+/*! ----------------------Html part css ---------------- */
+
+#string{
+    width: 90%;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 50px;
+}
+
+.st-1 h5{
+
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px 50px 10px 0;
+    margin-left: 10px;
+    font-size: 15px;
+
+}
+
+.st-1 p{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+
+}
+
+/*! ----------------------Html part css ---------------- */
+
+
+
 
 /* Footer Css */
 
@@ -268,8 +441,7 @@ h2 {
     font-family: 'Poppins', sans-serif, Arial;
     background-color: #f4f7fb;
 }
-
-        
+      
 .container{
     max-width: 1170px;
     line-height: 1.5;
