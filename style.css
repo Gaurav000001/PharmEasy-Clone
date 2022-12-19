@@ -343,6 +343,9 @@
     width: 60%;
 }
 
+.con-2 img:hover{
+    cursor: pointer;
+}
 
 
 /* !concern css end */
