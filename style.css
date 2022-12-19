@@ -17,6 +17,7 @@
 /* ************* NavBar CSS Start   **********************/
 
       .navbar{
+        z-index: 1000;
         position: fixed;
         background-color: #91d7d3;
         height: 100px;
@@ -235,6 +236,8 @@
     padding-top: 200px;
     display: grid;
     place-items: center;
+    position: relative;
+    z-index: -1000;
     overflow: hidden;
     border-radius: 1%;
     /* position: relative;
