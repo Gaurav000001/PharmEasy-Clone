@@ -230,9 +230,7 @@
     background: rgb(233, 255, 248);
     background: linear-gradient(90deg, rgba(233, 255, 248, 1) 40%, rgba(175, 255, 251, 1) 99%);
     margin: auto;
-    margin-top: 300px;
     margin-bottom: 50px;
-    padding-top: 200px;
     display: grid;
     place-items: center;
     overflow: hidden;

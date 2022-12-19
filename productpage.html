@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" href="/images/icon2.png" type="image/png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script
+      src="https://kit.fontawesome.com/b06a377e67.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
+
+        
+
         #container{
             display: flex;
             /* border: 2px solid green; */
@@ -120,9 +129,12 @@
         }
 
         /* ************* NavBar CSS Start   **********************/
-
-      .navbar{
-        /* position: fixed; */
+        .navbar{
+        margin-top: 0px;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        position: fixed;
         background-color: #91d7d3;
         height: 100px;
         width:100%;
@@ -130,6 +142,9 @@
         justify-content: center;
         align-items: center;
       }
+
+
+
       .navbar::before{
         position: fixed;
         z-index: 1000;
@@ -180,7 +195,12 @@
         color: #ffd447;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         /* background-color: white; */
+        font-size: .96rem;
       }
+
+      .empty{
+    padding-top: 100px;
+}
       
       
       
@@ -203,16 +223,16 @@
             </div>
             <div class="nav">
               <ul>
-                <li><a href="">Medicine
+                <li><a href="./productpage.html">Medicine
                 </a></li>
-                <li><a href="">Lab Tests</a></li>
-                <li><a href="">Healthcare</a></li>
-                <li><a href="">Surgeries</a></li>
-                <li><a href=""><span>Health Blogs</span></a></li>
+                <li><a href="./productpage.html">Lab Tests</a></li>
+                <li><a href="./productpage.html">Healthcare</a></li>
+                <li><a href="./productpage.html">Surgeries</a></li>
+                <li><a href="./productpage.html"><span>Health Blogs</span></a></li>
                 <li>
-                  <input type="search" placeholder="What are you looking for?" id="search" onkeyup="searchdata()"> />
+                  <input type="search" id="search" placeholder="What are you looking for?" onkeyup="searchdata()" />
                 </li>
-                <li><a href="">More</a><span>|</span></li>
+                <li><a href="./productpage.html">More</a><span>|</span></li>
                 <!-- <li><a href="">Sign Up/Sign In</a></li> -->
                 <li>
                   <a href="#"><i class="fa-regular fa-bell"></i></a>
@@ -224,12 +244,13 @@
                   <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
                 </li>
                 <li>
-                  <a href="./cart.html"><i class="fa-regular fa-user"></i>Hello, Log in
+                  <a href="./signup.html"><i class="fa-regular fa-user"></i>  Hello, Log in
                   </a>
                 </li>
               </ul>
             </div>
-        </div>
+          </div>
+          <div class="empty"></div>
         
  <div id="mydiv">
     <h2 id="showresult"></h2>
@@ -272,6 +293,7 @@
 </div>   
     <!-- Akash footer start here -->
     
+
     <!-- akash footer end here -->
 </body>
 </html>
