@@ -304,3 +304,7 @@
     cursor: pointer;
     font-weight: 600;
 }
+
+#pointers{
+    margin-bottom: 40px;
+}
