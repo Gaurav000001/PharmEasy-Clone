@@ -1,5 +1,7 @@
 
 .slider{
+  /* position: absolute; */
+  z-index: -1000;
   display: flex;
   padding: 50px 50px;
   /* min-height: 100vh; */
