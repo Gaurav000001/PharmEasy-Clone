@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#containHeader {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #10847e;
+}
+
+img {
+    margin-top: 30px;
+    height: 65px;
+    width: 200px;
+}
+
+#logo {
+    height: 80px;
+    width: 80px;
+    margin-left: 10px;
+}
+
+#tabHead {
+    height: 100%;
+    width: 100%;
+}
+
+#searchHead {
+    height: 45%;
+    width: 1200px;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+}
+
+
+li {
+    font-size: 20px;
+    font-family: Open Sans, sans-serif;
+    margin-top: 10px;
+    margin-left: 25px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: white;
+    margin: auto;
+    display: block;
+}
+
+li a:hover::after {
+    width: 100%;
+    transition: width 0.1s linear;
+}
+
+button {
+    margin: auto;
+}
+
+.keyHead {
+    color: white;
+    font-size: 15px;
+    font-family: Open Sans, sans-serif;
+    margin-top: 5px;
+    margin-left: 25px;
+    border: transparent;
+    background-color: transparent;
+}
+
+ion-icon {
+    color: white;
+    font-size: 22px;
+    margin: auto;
+}
+
+.grid-container {
+    margin-left: 170px;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto ;
+
+}
+
+
+.item:hover img{
+    transition: 1s;
+    height: 110%;
+    width: 110%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  }
+
+.grid-container>div {
+    padding: 20px;
+    margin-left: 10px;
+    height: 150px;
+    width: 350px;
+    text-align: center;
+}
+
+.item img {
+    height: 100%;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#main{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.footer{
+    margin: 100px;
+}
+
+.footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70%;
+    width: 90%;
+  
+    
+}
